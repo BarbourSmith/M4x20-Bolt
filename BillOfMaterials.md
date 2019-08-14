@@ -2,4 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|M4 x 20mm Bolt|1|0.119|https://www.mcmaster.com/91239a152|
+|M4 x 20mm Bolt|1|$0.12|https://www.mcmaster.com/91239a152|
+|Total: |1|$0.12| |
