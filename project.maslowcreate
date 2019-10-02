@@ -94,15 +94,15 @@
                             "ioValue": ""
                         },
                         {
+                            "name": "3D shape 899174",
+                            "ioValue": 10
+                        },
+                        {
                             "name": "3D shape 209703",
                             "ioValue": 10
                         },
                         {
                             "name": "3D shape 526047",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "3D shape 899174",
                             "ioValue": 10
                         }
                     ],
@@ -136,7 +136,7 @@
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1316,
-                    "y": 164,
+                    "y": 163.5,
                     "ioValues": []
                 }
             ],
@@ -192,5 +192,5 @@
             "fileTypeVersion": 1
         }
     ],
-    "circleSegmentSize": 2
+    "circleSegmentSize": "0.7"
 }
