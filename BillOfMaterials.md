@@ -2,7 +2,6 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|M4 x 20mm Bolt|1|$0.12|https://www.mcmaster.com/91239a152|
-|Total: |1|$0.12| |
+|Total: |0|$0.00| |
 
- 3xCOG MSRP: $0.36
+ 3xCOG MSRP: $0.00

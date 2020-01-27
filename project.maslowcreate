@@ -90,14 +90,6 @@
                     "uniqueID": 888535,
                     "ioValues": [
                         {
-                            "name": "3D shape 899174",
-                            "ioValue": ""
-                        },
-                        {
-                            "name": "3D shape 899174",
-                            "ioValue": 10
-                        },
-                        {
                             "name": "3D shape 209703",
                             "ioValue": 10
                         },
@@ -107,21 +99,6 @@
                         }
                     ],
                     "removeCutawayGeometry": true
-                },
-                {
-                    "atomType": "Add BOM Tag",
-                    "name": "Add BOM Tag",
-                    "x": 974,
-                    "y": 107,
-                    "uniqueID": 711883,
-                    "ioValues": [],
-                    "BOMitem": {
-                        "BOMitemName": "M4 x 20mm Bolt",
-                        "numberNeeded": 1,
-                        "costUSD": 0.119,
-                        "source": "https://www.mcmaster.com/91239a152",
-                        "totalNeeded": 0
-                    }
                 },
                 {
                     "atomType": "Color",
@@ -144,48 +121,49 @@
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 245690,
                     "ap2ID": 820883
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 772788,
                     "ap2ID": 269571
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "3D shape 526047",
+                    "ap2Primary": false,
                     "ap1ID": 820883,
                     "ap2ID": 888535
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 269571,
                     "ap2ID": 187129
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "3D shape 209703",
+                    "ap2Primary": false,
                     "ap1ID": 187129,
                     "ap2ID": 888535
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap2Primary": true,
                     "ap1ID": 888535,
-                    "ap2ID": 711883
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": 711883,
                     "ap2ID": 265753
                 },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
+                    "ap2Primary": false,
                     "ap1ID": 265753
                 }
             ],
