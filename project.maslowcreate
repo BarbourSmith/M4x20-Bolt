@@ -103,11 +103,26 @@
                 {
                     "atomType": "Color",
                     "name": "Color",
-                    "x": 1153,
-                    "y": 140,
+                    "x": 995,
+                    "y": 106,
                     "uniqueID": 265753,
                     "ioValues": [],
                     "selectedColorIndex": "11"
+                },
+                {
+                    "atomType": "Add-BOM-Tag",
+                    "name": "Add BOM Tag",
+                    "x": 1176,
+                    "y": 116,
+                    "uniqueID": 580201,
+                    "ioValues": [],
+                    "BOMitem": {
+                        "BOMitemName": "New BOM TAG",
+                        "numberNeeded": 1,
+                        "costUSD": 0,
+                        "source": "www.example.com",
+                        "totalNeeded": 1
+                    }
                 },
                 {
                     "atomType": "Output",
@@ -162,9 +177,16 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 265753,
+                    "ap2ID": 580201
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
-                    "ap1ID": 265753
+                    "ap1ID": 580201
                 }
             ],
             "fileTypeVersion": 1
