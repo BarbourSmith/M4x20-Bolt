@@ -4,9 +4,3 @@
 
 ![](/project.svg)
 
-## M4x20 Bolt
-
-
-undefined
-
-
