@@ -12,8 +12,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.2150153217568948,
-                    "y": 0.36096256684491984,
+                    "x": 0.20204978038067348,
+                    "y": 0.37164750957854403,
                     "uniqueID": 245690,
                     "ioValues": [
                         {
@@ -38,8 +38,8 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.5081716036772217,
-                    "y": 0.3529411764705882,
+                    "x": 0.5344070278184481,
+                    "y": 0.2681992337164751,
                     "uniqueID": 888535,
                     "ioValues": [
                         {
@@ -56,8 +56,8 @@
                 {
                     "atomType": "Circle",
                     "name": "Circle",
-                    "x": 0.20786516853932585,
-                    "y": 0.6898395721925135,
+                    "x": 0.19692532942898977,
+                    "y": 0.6206896551724138,
                     "uniqueID": 772788,
                     "ioValues": [
                         {
@@ -69,8 +69,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.31052093973442285,
-                    "y": 0.713903743315508,
+                    "x": 0.32650073206442165,
+                    "y": 0.6130268199233716,
                     "uniqueID": 269571,
                     "ioValues": [
                         {
@@ -80,19 +80,10 @@
                     ]
                 },
                 {
-                    "atomType": "Color",
-                    "name": "Color",
-                    "x": 0.6670071501532175,
-                    "y": 0.44385026737967914,
-                    "uniqueID": 265753,
-                    "ioValues": [],
-                    "selectedColorIndex": "11"
-                },
-                {
                     "atomType": "Translate",
                     "name": "Translate",
-                    "x": 0.4616956077630235,
-                    "y": 0.6978609625668448,
+                    "x": 0.45900439238652996,
+                    "y": 0.6015325670498084,
                     "uniqueID": 187129,
                     "ioValues": [
                         {
@@ -110,9 +101,27 @@
                     ]
                 },
                 {
+                    "atomType": "Color",
+                    "name": "Color",
+                    "x": 0.6670071501532175,
+                    "y": 0.44385026737967914,
+                    "uniqueID": 265753,
+                    "ioValues": [],
+                    "selectedColorIndex": "11"
+                },
+                {
+                    "atomType": "Code",
+                    "name": "Code",
+                    "x": 0.49633967789165445,
+                    "y": 0.8084291187739464,
+                    "uniqueID": 542340,
+                    "ioValues": [],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(input){\n  return bolt();\n}\n\n\nfunction cutAways(){\n    const shape1 = myTranslate(myCircle(60), 60/2,60/2,0);\n    const shape2 = myTranslate(myRectangle(10,10), 300, 5, 0);\n    const shape3 = myTranslate(myRectangle(10,10), 5, 300, 0);\n    \n    const oneWing = shrinkWrap([shape1, shape2, shape3]);\n    const wing1 = myRotate(myTranslate(oneWing, 40, 40, 0), 0, 0, 90);\n    const wing2 = myRotate(myTranslate(oneWing, 40, 40, 0), 0, 0, 180);\n    const wing3 = myRotate(myTranslate(oneWing, 40, 40, 0), 0, 0, 270);\n    const centerCircle = myCircle(69.5);\n    const slice = myRotate(myTranslate(myRectangle(500,4), 250, 0, 0), 0, 0, 45);\n    \n    return myAssemble([wing1, wing2, wing3, centerCircle, slice]);\n}\n\n\nfunction blank(){\n\treturn myTag(myExtrude(myDifference( myCircle(285), cutAways()),10), \"Plate\");\n}\n\nfunction bolt(){\n\treturn myCircle(4);\n}\n\n\nfunction myCircle(diameter){\n\t\n    const circumference  = 3.14*diameter;\n    const numberOfSegments = Math.min(Math.max(parseInt( circumference / 4.6 ),5), 100)\n\t\n    return Circle.ofDiameter(diameter, {sides: numberOfSegments});\n}\n\nfunction myRectangle(x, y){\n\treturn Square(x, y);\n}\n\nfunction myTranslate(inputShape, x, y, z){\n\treturn inputShape.move(x,y,z);\n}\n\nfunction myExtrude(shape, distance){\n\treturn shape.extrude(distance);\n}\n\nfunction shrinkWrap(values){\n\treturn Hull(...values);\n}\n\nfunction myRotate(shape, x, y, z){\n\treturn shape.rotateX(x).rotateY(y).rotateZ(z);\n}\n\nfunction myAssemble(shapes){\n\treturn Assembly(...shapes)\n}\n\nfunction myDifference(shape1, shape2){\n    return shape1.cut(shape2).kept();\n}\n\nfunction myTag(shape, tag){\n    return shape.as(tag);\n}\n\nreturn main(input)"
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
-                    "x": 0.9897854954034729,
+                    "x": 0.9853587115666179,
                     "y": 0.5,
                     "ioValues": []
                 }
@@ -155,16 +164,16 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 265753
-                },
-                {
-                    "ap1Name": "geometry",
                     "ap2Name": "3D shape 209703",
                     "ap2Primary": false,
                     "ap1ID": 187129,
                     "ap2ID": 888535
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 265753
                 }
             ],
             "fileTypeVersion": 1
