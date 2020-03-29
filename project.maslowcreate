@@ -112,14 +112,14 @@
                 {
                     "atomType": "Add BOM Tag",
                     "name": "Add BOM Tag",
-                    "x": 0.7710960232783706,
-                    "y": 0.5057471264367817,
+                    "x": 0.7662463627546071,
+                    "y": 0.49808429118773945,
                     "uniqueID": 640810,
                     "ioValues": [],
                     "BOMitem": {
                         "BOMitemName": "M4x20mm Bolt",
                         "numberNeeded": 1,
-                        "costUSD": 0,
+                        "costUSD": 0.19,
                         "source": "www.example.com",
                         "totalNeeded": 1
                     }
