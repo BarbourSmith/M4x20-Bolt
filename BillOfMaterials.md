@@ -2,7 +2,7 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|M4x20mm Bolt|1|$0.00|www.example.com|
-|Total: |1|$0.00| |
+|M4x20mm Bolt|0|$0.00|www.example.com|
+|Total: |0|$0.00| |
 
  3xCOG MSRP: $0.00
